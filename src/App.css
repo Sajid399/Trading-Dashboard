@@ -1,38 +1,532 @@
-.App {
+.sidebar {
+flex-shrink: 0;
+  padding: 20px 0;
+  border-radius: 0px 30px 30px 0px;
+  background: #28282B;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.20);
+  position:absolute;
+  z-index:1;
+  height: 800px;
+  width: 280px;
+}
+
+
+.main-col3,
+.main-col4 {
+  border-radius: 16px;
+  opacity: 0.9;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+  overflow-y: scroll; 
+   height: 360px; 
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* Add height for the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2px;
+}
+
+img {
+  width: 204.341px;
+  height: 35px;
+}
+
+.iconimage {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 118px;
+  height: 27.333px;
+  flex-shrink: 0;
+}
+
+.svg1 {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: black;
+}
+
+.list-item {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+  list-style: none;
+}
+
+.list-item ul li:first-child.active {
+  color: #EFB91C;
+  font-weight: bold;
+}
+
+.list-item li:hover {
+  cursor: pointer;
+
+}
+
+ul li {
+  padding: 20px;
+  margin: auto;
+}
+
+.Bottom-link {
+  color: #FFF;
+  list-style: none;
+}
+
+.Bottom-link li:hover {
+  background-color: #444;
+  cursor: pointer;
+
+}
+
+.icon-image {
+  width: 24px;
+  height: 20px;
+}
+
+.icon-image {
+  margin: 0 10px;
+}
+
+.hr {
+  background: #EEE;
+  margin-top: 65px;
+}
+
+.heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.name {
+  color: #F0BA19;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.icons1 {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.icons2 {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.icons1 img,
+.icons2 img {
+  width: fit-content;
+}
+
+.profile-image {
+  width: 24px;
+  height: 62px;
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: fit-content;
+}
+
+.head {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  padding-top:8px;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style for dropdown options */
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* Ensure options have a transparent background */
+}
+
+/* Style for dropdown option hover effect (optional) */
+.dropdown option:hover {
+  background-color: #f0f0f0;
+}
+
+.trending-paragraph {
+  color: #737373;
   text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paragraph {
+  width: 180px;
+  height: 56px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signalimage img {
+  width: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.imagetrend {
+  width: 53px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.sigpara {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.tablehead {
+  color: #666;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.tablebody {
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.btn {
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 11px;
+  border-radius: 33px;
+  background: #EEE;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #F0BA19;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signalbody {
+  width: 133px;
+  height: 119px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+}
+
+.flag-container {
+  display: flex;
+
+  padding: 8px;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 8px;
+  border-top: #666;
+}
+
+.flag-container:hover {
+  background: #F0BA19;
+
+}
+
+.profile-page-cont {
+  width: 756px;
+  height: 180px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #FFF;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.profile-page-cont1 {
+  width: 756px;
+  height: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.20);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  font-size: small;
+  padding: 5px;
+  margin: 5px;
+  height: 45px;
+  width: 180px;
+  border: none;
+  border-radius: 5px;
+}
+.button:hover{
+  background: #F0BA19;
+
+}
+
+.english {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.research-portal {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 500px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #FFF;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.20);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  overflow-x: auto;
+}
+
+.input-group {
+  display: flex;
+  width: 240px;
+  padding: 5px 8px 10px 12px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+  background: rgba(247, 246, 249, 0.60);
+}
+
+.profile-page-cont2 {
+  width: 756px;
+  height: 400px;
+  padding: 10px;
+  overflow: scroll;
+  border-radius: 16px;
+  background: #FFF;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.20);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-page-cont3 {
+  width: 756px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 16px;
+  margin: 20px auto;
+  background: #FFF;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.20);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.whats {
+  display: flex;
+  padding: 20px;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray, #737373);
+  background: #FFF;
+
+}
+.horizontal {
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  display:block!important;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch
+}
+li {
+  display: inline-block
+}
+
+.notifications {
+  background-color: gray;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 20%; /* Center vertically at 50% from the top */
+  left: 50%; /* Center horizontally at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the notification */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .notifications {
+    width: 80%; /* Adjust the width for small screens as needed */
+    width: 250px;
+    margin: 0 auto; /* Center horizontally in the viewport */
+    left: auto;
+    right: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.research-btn{
+  display: inline-flex;
+padding: 6px 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 85px;
+}
+.status-approved {
+  background-color:#03BA20;
+}
+
+.status-suspend {
+  background-color: #E7000E;
+}
+
+.status-pending {
+  background-color: #FF9518;
+}
+.status-Paid{
+  background-color: #03BA20;
+}
+.status-unPaid{
+  background-color: #E7000E;
+}
+.research-table-head{
+  width: 136px;
+height: 21px;
+flex-shrink: 0;
+color: #666;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.table-data{
+  
+  color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.input-group1 {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 2px;
+  border-radius: 16px;
+  background: rgba(247, 246, 249, 0.60);
+  margin-left: 60px;
+}
+.referal-button{
+  width: 200px;
+height: 44px;
+flex-shrink: 0;
+border-radius: 8px;
+background: var(--Invisor, #F0BA19);
+}
+@media (max-width: 768px) {
+  .referal-button {
+    width: 100px; 
   }
+}
+.custom-switch .custom-control-input:checked + .custom-control-label::before {
+  background-color: #F0BA19; /* Change this to your desired color (e.g., red) */
 }
